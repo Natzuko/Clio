@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- titulo -->
+    <title>Clio</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section class="fuko">
+            <!-- video -->
+            <video id="backgroundVideo" loop autoplay muted>
+                <source src="./template/Fuko's Emptiness.mp4" type="video/mp4">
+            </video>
+            <!-- texto -->
+            <div class="text-content">
+                <h1 class="bebas-neue">CLIO</h1>
+                <h2 class="bebas-neue">Electronic Art Gallery</h2>
+                <h3 class="bebas-neue"> art, science and code</h3>
+                <br>
+                <br>
+                <br>
+                <h2 class="bebas-neue fadeContinuous">It will blow your mind</h2>
+                <h2 class="bebas-neue fadeContinuous">coming soon</h2>
+            </div>
+
+            <!-- boton -->
+            <div class="button-container">
+                <button id="goToInfoBtn" onclick="goToInfo()" class="bebas-neue">Info</button>
+            </div>
+
+            <!-- contacto -->
+            <div class="contacto bebas-neue">
+                <ul>
+                    <li><i class="fa-regular fa-copyright fa-fade"></i> <span>2024 Natalia Scuzarello</span></li>
+                    <li class="webpage-nat"><a href="http://www.natscuzarello.com">www.natscuzarello.com</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script>
+        function goToInfo() {
+            window.location.href = "template/info.html";
+        }
+    </script>
+</body>
+
+</html>
